@@ -65,12 +65,9 @@ contract FundMe {
         require(callSuccess, "Call failed");
     }
 
-    
     /**
      * Getter Functions
      */
-
-    
     function getAddressToAmountFunded(address fundingAddress) public view returns (uint256) {
         return s_addressToAmountFunded[fundingAddress];
     }
@@ -90,7 +87,6 @@ contract FundMe {
     function getPriceFeed() public view returns (AggregatorV3Interface) {
         return s_priceFeed;
     }
-
 }
 
 // Concepts we didn't cover yet (will cover in later sections)
